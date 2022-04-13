@@ -244,7 +244,7 @@ def onmessage(update,bot:ObigramClient):
         tl_admin_user = os.environ.get('tl_admin_user')
 
         #set in debug
-        #tl_admin_user = 'obisoftdev'
+        #tl_admin_user = 'rockstar984'
 
         jdb = JsonDatabase('database')
         jdb.check_create()
@@ -480,9 +480,7 @@ def onmessage(update,bot:ObigramClient):
         thread.store('msg',message)
 
         if '/start' in msgText:
-            start_msg = 'Bot          : TGUploaderPro v7.0\n'
-            start_msg+= 'Desarrollador: @obisoftdev\n'
-            start_msg+= 'Api          : https://github.com/Obysoftt/pyobigram\n'
+            start_msg = 'Bot          : Bienvenido a mi bot de descargar y subida a la nube🙃 creador de esta belleza @rockstar984\n'
             start_msg+= 'Uso          :Envia Enlaces De Descarga y Archivos Para Procesar (Configure Antes De Empezar , Vea El /tutorial)\n'
             bot.editMessageText(message,start_msg)
         elif '/files' == msgText and user_info['cloudtype']=='moodle':
@@ -562,7 +560,7 @@ def main():
     bot_token = os.environ.get('bot_token')
 
     #set in debug
-    #bot_token = '5270983050:AAGBgDc2TXVkuWNiF2gATBjDSr1Xjpd3z2Q'
+    #bot_token = '5267170951:AAEqx23n7KRgx_-qey41Fhw_VnxWf2IG9iU'
 
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
